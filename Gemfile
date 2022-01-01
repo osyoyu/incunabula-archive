@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "rails", "~> 7.0.0"
 
+gem "hamlit"
 gem "mysql2", "~> 0.5"
 gem "puma", "~> 5.0"
 gem "ridgepole"
