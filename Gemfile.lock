@@ -146,10 +146,6 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.0)
   sprockets-rails
-  tzinfo-data
-
-RUBY VERSION
-   ruby 3.0.1p64
 
 BUNDLED WITH
    2.2.17
