@@ -11,4 +11,8 @@ class Post < ApplicationRecord
     return nil if !persisted?
     "#{created_at.strftime("%Y%m%d")}-#{id}"
   end
+
+  def render_html
+    CommonMarker.render_html(self.body, [:DEFAULT, :UNSAFE, :HARDBREAKS])
+  end
 end
