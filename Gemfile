@@ -7,6 +7,7 @@ gem "hamlit"
 gem "mysql2", "~> 0.5"
 gem "puma", "~> 5.0"
 gem "ridgepole"
+gem "sassc"
 gem "sprockets-rails"
 
 group :development, :test do
