@@ -50,6 +50,4 @@ test:
 #
 production:
   <<: *default
-  database: incunabula_production
-  username: incunabula
-  password: <%= ENV["INCUNABULA_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
