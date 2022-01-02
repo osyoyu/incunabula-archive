@@ -10,4 +10,5 @@ gem "sprockets-rails"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "pry-rails"
 end
