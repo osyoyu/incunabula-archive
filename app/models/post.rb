@@ -7,6 +7,8 @@ class Post < ApplicationRecord
     end
   end
 
+  scope :listable, -> { where(is_draft: false) }
+
   def to_param
     return nil if !persisted?
     "#{created_at.strftime("%Y%m%d")}-#{id}"
