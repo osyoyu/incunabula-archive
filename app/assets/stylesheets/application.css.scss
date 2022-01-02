@@ -1,5 +1,9 @@
 body {
-  line-height: 2rem;
+  font-size: 18px;
+  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "Hiragino Sans", sans-serif;
+  font-weight: 300;
+
+  line-height: 36px;
 }
 
 .wrapper {
@@ -8,5 +12,6 @@ body {
 }
 
 pre {
+  font-size: 1rem;
   line-height: 1rem;
 }
