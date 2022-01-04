@@ -1,9 +1,15 @@
 class Post < ApplicationRecord
   class << self
     def find_by_url_key(url_key)
+      find_by_url_key!(url_key)
+    rescue
+      nil
+    end
+
+    def find_by_url_key!(url_key)
       matches = url_key.match(/-(\d+)$/)
       return nil if matches.nil?
-      find_by(id: matches[1])
+      find_by!(id: matches[1])
     end
   end
 
