@@ -1,0 +1,14 @@
+= form_with(model: @post) do |f|
+  Title
+  = f.text_field :title
+  %br
+  Body
+  %br
+  = f.text_area :body
+  %br
+  Draft?
+  = f.check_box :is_draft
+  %br
+  = text_field_tag :admin_key
+  %br
+  = f.submit
