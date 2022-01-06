@@ -12,6 +12,11 @@ class PostsController < ApplicationController
   end
 
   def create
+    if params[:admin_key] != ENV.fetch('INCUNABULA_ADMIN_KEY')
+      head 401
+      return
+    end
+
     @post = Post.new(
       title: params[:post][:title],
       body: params[:post][:body],
