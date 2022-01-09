@@ -16,4 +16,4 @@ RUN bundle install
 
 COPY . /app
 
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+CMD ["bundle", "exec", "puma", "-t", "0:16"]
