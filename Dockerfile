@@ -16,8 +16,7 @@ COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
 RUN bundle install
 
-RUN bundle exec rails assets:precompile
-
 COPY . /app
+RUN bundle exec rails assets:precompile
 
 CMD ["bundle", "exec", "puma", "-t", "0:16"]
