@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.listable.order(created_at: :desc)
+    expires_in 3.hours, public: true
   end
 
   def show
