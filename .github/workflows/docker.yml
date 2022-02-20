@@ -28,5 +28,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io:osyoyu/incunabula:latest
-            ghcr.io:osyoyu/incunabula:${{ github.sha }}
+            ghcr.io/osyoyu/incunabula:latest
+            ghcr.io/osyoyu/incunabula:${{ github.sha }}
